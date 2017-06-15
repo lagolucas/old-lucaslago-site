@@ -2,23 +2,26 @@
 <html>
 <body>
 	
-<script type="text/javascript'>
-function random_3(){
-    var myrandom=Math.round(Math.random()*2)
-    var link1="http://www.codingforums.com"
-    var link2="http://www.cssdrive.com"
-    var link3="http://www.dynamicdrive.com"
-    if (myrandom==0)
-        window.location=link1
-    else if (myrandom==1)
-        window.location=link2
-    else if (myrandom==2)
-        window.location=link3
-}
+	<a href="javascript:openSite()">Click to go to a random site</a>
+<script>
+var links = [
+              "google.com",
+              "youtube.com",
+              "reddit.com",
+              "apple.com"]
+
+           var openSite = function() {
+              // get a random number between 0 and the number of links
+              var randIdx = Math.random() * links.length;
+              // round it, so it can be used as array index
+              randIdx = parseInt(randIdx, 10);
+              // construct the link to be opened
+              var link = 'http://' + links[randIdx];
+
+         window.location=link;
+    };
 </script>
-<form>
-<input type="button" value="random link!" onClick="random_3()">
-</form>
+
 
 </body>
 </html>
