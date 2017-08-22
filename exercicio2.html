@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>forms e divs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="exe2.css"/>
+
+    </head>
+    <body>
+        <form action="" method="post" >
+            <fieldset >
+                <legend>Primeira parte</legend>
+                <div>
+                    <label for="numero">Um número: </label>
+                    <input name="numero" type="number"/>
+                </div>
+                <div>
+                    <label for="nome">Um nome: </label>
+                    <input name="nome" type="text" placeholder="Nome..."/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Segunda parte</legend>
+                <div>
+                    <label for="senha">Senha: </label>
+                    <input name="senha" type="password"/>
+                </div>
+                <div>
+                    <label for="carros">Carros: </label>
+                    <select name="carros">
+                        <option value="volvo">Volvo</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+                <div class="botao">
+                    <input type="submit"/>
+                </div>
+            </fieldset>
+
+        </form>
+    </body>
+</html>
